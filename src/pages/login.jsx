@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import ecommerceLogo from '../assets/ecommerceLogo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
+
 
 
 export default function Login() {
@@ -52,7 +53,7 @@ export default function Login() {
                 </div>
             </div>
             <div className='mt-9'>
-               <a href='/Home'> <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</button></a>
+                <Link to='/Login' className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</Link>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>

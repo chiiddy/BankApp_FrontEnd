@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ecommerceLogo from '../assets/ecommerceLogo.png';
 import {HiOutlineHome} from 'react-icons/hi';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -70,7 +70,7 @@ export default function Deposit() {
                 <input type='number' placeholder='0.00' id='amount' value={inputs.amount} onChange={handleOnChange} className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-3 mt-[2.2rem]' />
                 </div>
                 <div>
-               <a href='/Home'> <button className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Deposit</button> </a>
+               <Link to='/Home' className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Deposit </Link>
                 </div>
             </form>
         </div>

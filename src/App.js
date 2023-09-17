@@ -1,6 +1,6 @@
 import './App.css';
 import Signin from './pages/Signin.jsx';
-import Login from './pages/login.jsx';
+// import Login from './pages/login.jsx';
 import Home from './pages/Home.jsx';
 import Deposit from './pages/deposit.jsx';
 import Withdrawal from './pages/withdrawal';

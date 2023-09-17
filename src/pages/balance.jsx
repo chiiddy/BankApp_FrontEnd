@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import ecommerceLogo from '../assets/ecommerceLogo.png';
 import {HiOutlineHome} from 'react-icons/hi';
 import axios from 'axios';
+import {Link} from 'react-router-dom'
 export default function Balance() {
 
 
@@ -14,7 +15,7 @@ export default function Balance() {
 
 const balance = () => {
   try {
-     axios.get("https://magneto-banking-application.onrender.com/api/transactions/"+tokenData?.user?._id,  {
+     axios.get("https://localhost:8080/api/transactions/"+tokenData?.user?._id,  {
       headers: {
         Authorization: `Bearer ${tokenData?.token}`,
         Accept: "application/json",
@@ -47,7 +48,7 @@ useEffect(balance, [tokenData]);
             <h1> Dashboard</h1>
         </div>
         <div className='flex mr-10 mt-6'>
-       <a href='/Home'> <HiOutlineHome className='mt-1'/> </a>
+       <Link to='/Home'> <HiOutlineHome className='mt-1'/> </Link>
         <div>
         < a href='/Home'>Home</a>
         </div>

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ecommerceLogo from '../assets/ecommerceLogo.png';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 export default function Signin() {
@@ -53,11 +53,11 @@ export default function Signin() {
                 <input type='password' placeholder='Password' required id='password' value={inputs.password} onChange={handleOnChange}  className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-5' />
                 </div>
             </div>
-            <a href='/Home'><button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '>Continue</button></a>
+            <Link to='/Home'><button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '>Continue</button></Link>
             </form>
             <div className='mt-9'>
                 <p>Already a user?</p>
-               <a href='/Login'> <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</button></a>
+               <Link to='/Login'> <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</button></Link>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>
