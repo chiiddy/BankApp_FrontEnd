@@ -19,7 +19,7 @@ export default function Signin() {
         e.preventDefault();
         try {
             axios
-            .post ('http://localhost:8080/api/signup', inputs, {
+            .post ('https://magneto-banking-application.onrender.com/api/signup', inputs, {
             // headers: {
             //     'Authorization': `Bearer ${token}` }
             }).then((res) =>{

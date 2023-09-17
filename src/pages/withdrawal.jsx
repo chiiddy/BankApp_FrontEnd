@@ -30,7 +30,7 @@ export default function Withdrawal() {
       };
     
       try {
-        await axios.post("http://localhost:8080/api/withdraw", data,  {
+        await axios.post("https://magneto-banking-application.onrender.com/api/withdraw", data,  {
           headers: {
             Authorization: `Bearer ${tokenData?.token}`,
             Accept: "application/json",

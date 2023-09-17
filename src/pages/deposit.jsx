@@ -28,7 +28,7 @@ export default function Deposit() {
       };
     
       try {
-        await axios.post("http://localhost:8080/api/deposit", data,  {
+        await axios.post("https://magneto-banking-application.onrender.com/api/deposit", data,  {
           headers: {
             Authorization: `Bearer ${tokenData?.token}`,
             Accept: "application/json",
