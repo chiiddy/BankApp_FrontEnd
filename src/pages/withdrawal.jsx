@@ -9,7 +9,7 @@ import axios from 'axios';
 export default function Withdrawal() {
 
     const [ inputs, setInputs ] = useState({
-        amount: ''
+        amount: 0
     });
 
     const handleOnChange = (e) => {
@@ -26,7 +26,7 @@ export default function Withdrawal() {
     
       const data = {
         userId: tokenData?.user?._id,
-        amount: 0
+        amount: inputs.amount
       };
     
       try {

@@ -43,8 +43,8 @@ useEffect(balance, [tokenData]);
             <p>Magneto Bank</p>
         </div>
         </div>
-        <div className='mr-[36rem] mt-6'>
-            <h1> Account History</h1>
+        <div className='mr-[37rem] mt-6'>
+            <h1> Dashboard</h1>
         </div>
         <div className='flex mr-10 mt-6'>
        <a href='/Home'> <HiOutlineHome className='mt-1'/> </a>
@@ -53,7 +53,12 @@ useEffect(balance, [tokenData]);
         </div>
         </div>
         </div>
-        <section>
+        <div className='flex justify-center'>
+        <div className='w-[14rem] bg-red-600 h-[3rem] rounded pl-[3.4rem] pt-[0.5rem] text-white text-lg'>
+        Balance History
+        </div>
+        </div>
+        <section className='flex justify-center'>
           <div>
         {data?.map((item) => (
   <div key={item._id}>

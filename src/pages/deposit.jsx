@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function Deposit() {
 
     const [inputs, setInputs ] = useState({
-        amount: ''
+        amount: 0
     });
 
     const handleOnChange = (e) => {
@@ -24,7 +24,7 @@ export default function Deposit() {
     
       const data = {
         userId: tokenData?.user?._id,
-        amount: 0
+        amount: inputs.amount
       };
     
       try {
