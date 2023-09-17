@@ -1,6 +1,6 @@
 import './App.css';
 import Signin from './pages/Signin.jsx';
-// import Login from './pages/login.jsx';
+import Login from './pages/login.jsx';
 import Home from './pages/Home.jsx';
 import Deposit from './pages/deposit.jsx';
 import Withdrawal from './pages/withdrawal';
@@ -12,12 +12,11 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Signin/>} />
-      <Route path='/Login' element={<Signin/>} />
-      {/* <Route path='/Login' element={<Login />} /> */}
-      <Route path='/Home' element={<Home />} />
-      <Route path='/Deposit' element={<Deposit />} />
-      <Route path='/Withdrawal' element={<Withdrawal />} />
-      <Route path='/Balance' element={<Balance />} />
+      <Route path='/login' element={<Login />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/deposit' element={<Deposit />} />
+      <Route path='/withdrawal' element={<Withdrawal />} />
+      <Route path='/balance' element={<Balance />} />
       </Routes>
     </BrowserRouter>
   );

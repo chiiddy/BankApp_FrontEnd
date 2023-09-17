@@ -24,7 +24,7 @@ export default function Signin() {
             //     'Authorization': `Bearer ${token}` }
             }).then((res) =>{
                 console.log(res.data);
-                navigate('/Home')
+                navigate('/home')
                 alert('registered successfully');
             })
         } catch (err) {
@@ -32,6 +32,9 @@ export default function Signin() {
         }
     };
 
+    const handleButtonClick = () => {
+        alert('logged in successfully');
+      };
 
   return (
     <div className='flex justify-center mt-[4rem]'>
@@ -53,11 +56,11 @@ export default function Signin() {
                 <input type='password' placeholder='Password' required id='password' value={inputs.password} onChange={handleOnChange}  className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-5' />
                 </div>
             </div>
-            <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '>Continue</button>
+            <button onClick={handleButtonClick} className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '><Link to='/home' >Continue </Link></button>
             </form>
             <div className='mt-9'>
                 <p>Already a user?</p>
-               <Link to='/Login' className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</Link>
+               <Link to='/login' className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</Link>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>

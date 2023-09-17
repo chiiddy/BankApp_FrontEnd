@@ -25,15 +25,15 @@ export default function Home() {
         </div>
     <div className='w-full h-full mt-[5rem]'>
         <div className='grid grid-cols-2 gap-2.5 auto-rows-[minmax(100, auto)] justify-center items-center m-4'>
-        <Link to='/Deposit'>  <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'>
-          <Link to='/Deposit'> Deposit</Link>
-            </div> </Link>
-            <Link to='/Balance'>    <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'>
-            <Link to='/Balance'> Balance </Link>
-            </div> </Link>
-            <Link to='/Withdrawal'>  <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'>
-       <Link to='/Withdrawal'> Withdrawal </Link>
-            </div> </Link>
+          <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'><Link to='/deposit'>
+          <Link to='/deposit'> Deposit</Link>
+          </Link></div> 
+             <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'><Link to='/balance'>
+            <Link to='/balance'> Balance </Link>
+            </Link></div> 
+         <div className='bg-red-600 h-16 flex justify-center items-center border border-red-500 text-xl hover:bg-white'><Link to='/withdrawal'>
+       <Link to='/withdrawal'> Withdrawal </Link>
+       </Link></div> 
         </div>
     </div>
     </div>

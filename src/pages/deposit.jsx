@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import ecommerceLogo from '../assets/ecommerceLogo.png';
 import {HiOutlineHome} from 'react-icons/hi';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -45,6 +45,10 @@ export default function Deposit() {
       }
     };
 
+    const handleButtonClick = () => {
+      alert('logged in successfully');
+    };
+
   return (
     <div>
         <div className='flex justify-center'>
@@ -58,9 +62,9 @@ export default function Deposit() {
             <h1> Deposit Dashboard</h1>
         </div>
         <div className='flex mr-10 mt-6'>
-       <a href='/Home'> <HiOutlineHome className='mt-1'/> </a>
+       <a href='/home'> <HiOutlineHome className='mt-1'/> </a>
         <div>
-        < a href='/Home'>Home</a>
+        < a href='/home'>Home</a>
         </div>
         </div>
         </div>
@@ -70,7 +74,7 @@ export default function Deposit() {
                 <input type='number' placeholder='0.00' id='amount' value={inputs.amount} onChange={handleOnChange} className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-3 mt-[2.2rem]' />
                 </div>
                 <div>
-               <Link to='/Home' className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Deposit </Link>
+                <button onClick={handleButtonClick} className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Deposit</button>
                 </div>
             </form>
         </div>

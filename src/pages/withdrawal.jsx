@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import ecommerceLogo from '../assets/ecommerceLogo.png';
 import {HiOutlineHome} from 'react-icons/hi';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 
@@ -38,7 +38,7 @@ export default function Withdrawal() {
           },
         }).then((res) => {
           console.log(res.data);
-          navigate('/Home')
+          navigate('/home')
           alert("amount withdrawn successfully")
           // add remaining code
         });
@@ -46,7 +46,9 @@ export default function Withdrawal() {
         console.error("An unknown error occurred:", error);
       }
     };
-
+    const handleButtonClick = () => {
+      alert('logged in successfully');
+    };
   return (
     <div>
         <div className='flex justify-center'>
@@ -60,9 +62,9 @@ export default function Withdrawal() {
             <h1> Withdrawal Dashboard</h1>
         </div>
         <div className='flex mr-10 mt-6'>
-       <a href='/Home'> <HiOutlineHome className='mt-1'/> </a>
+       <Link to='/home'> <HiOutlineHome className='mt-1'/> </Link>
         <div>
-        < a href='/Home'>Home</a>
+        < Link to='/home'>Home</Link>
         </div>
         </div>
         </div>
@@ -72,7 +74,7 @@ export default function Withdrawal() {
                 <input type='number' placeholder='0.00' id='amount' value={inputs.amount} onChange={handleOnChange} className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-3 mt-[2.2rem]' />
                 </div>
                 <div>
-                <button className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Withdraw</button>
+                <button onClick={handleButtonClick} className='w-[14rem] h-[2.5rem] rounded bg-red-600 text-white mt-[3rem] ml-[7.2rem]'>Withdraw</button>
                 </div>
             </form>
         </div>
