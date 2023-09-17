@@ -53,11 +53,11 @@ export default function Signin() {
                 <input type='password' placeholder='Password' required id='password' value={inputs.password} onChange={handleOnChange}  className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-5' />
                 </div>
             </div>
-            <Link to='/Home'><button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '>Continue</button></Link>
+            <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '>Continue</button>
             </form>
             <div className='mt-9'>
                 <p>Already a user?</p>
-               <Link to='/Login'> <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</button></Link>
+               <Link to='/Login' className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' >Log in</Link>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>
