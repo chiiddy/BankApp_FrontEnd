@@ -48,9 +48,9 @@ useEffect(balance, [tokenData]);
             <h1> Dashboard</h1>
         </div>
         <div className='flex mr-10 mt-6'>
-       <Link to='/Home'> <HiOutlineHome className='mt-1'/> </Link>
+       <Link to='/home'> <HiOutlineHome className='mt-1'/> </Link>
         <div>
-        < a href='/Home'>Home</a>
+        < Link to='/home'>Home</Link>
         </div>
         </div>
         </div>

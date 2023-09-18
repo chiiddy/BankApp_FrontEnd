@@ -32,9 +32,9 @@ export default function Signin() {
         }
     };
 
-    const handleButtonClick = () => {
-        alert('logged in successfully');
-      };
+    // const handleButtonClick = () => {
+    //     alert('logged in successfully');
+    //   };
 
   return (
     <div className='flex justify-center mt-[4rem]'>
@@ -56,7 +56,7 @@ export default function Signin() {
                 <input type='password' placeholder='Password' required id='password' value={inputs.password} onChange={handleOnChange}  className='w-[29.8rem] h-[3.6rem] border border-red-700 rounded pl-5' />
                 </div>
             </div>
-            <button onClick={handleButtonClick} className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '><a href='/home' >Continue </a></button>
+            <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white mt-4 '><Link to='/home' >Continue </Link></button>
             </form>
             <div className='mt-9'>
                 <p>Already a user?</p>
