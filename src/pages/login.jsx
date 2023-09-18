@@ -34,9 +34,9 @@ export default function Login() {
 };
 
 
-// const handleButtonClick = () => {
-//   alert('logged in successfully');
-// };
+const handleButtonClick = () => {
+  alert('logged in successfully');
+};
   return (
     <div className='flex justify-center mt-[4rem]'>
         <section>
@@ -57,7 +57,7 @@ export default function Login() {
                 </div>
             </div>
             <div className='mt-9'>
-                <button className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' ><Link to='/home'>Log in</Link></button>
+                <button  onClick={handleButtonClick} className='w-[29.8rem] h-[3.6rem] bg-red-600 rounded text-white' ><Link to='/home'>Log in</Link></button>
                 <div>
                     <p className='font-thin ml-3'>For further support, you may visit the Help Center or contact our <br></br>customer service team.</p>
                 </div>
